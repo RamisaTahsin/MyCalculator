@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner;     //hampus version efter uppdatering
 import java.util.InputMismatchException;
 import java.lang.NumberFormatException;
 import java.text.DecimalFormat;
@@ -13,7 +13,7 @@ public class MyCalculator {
   private static DecimalFormat precision = new DecimalFormat("#0.00");
 
   public static final String ANSI_CYAN  = "\u001B[36m";
-  public static final String ANSI_RESET = "\u001B[0m";
+  public static final String ANSI_RESET = "\u001B[0m";   // person1 ramisa
 
   private static void add(double d1, double d2){
     answer = d1 + d2;
@@ -57,7 +57,7 @@ public class MyCalculator {
       "\nStep 3: Enter a double."+
       "\nStep 4: Repeat steps 2 and 3."+
       "\nTerminate software by entering anything else at step 2 or step 3.");
-  }
+  }  //person2 hayan
 
   public static void main(String[] args) {
     printInstructions();
@@ -102,4 +102,4 @@ public class MyCalculator {
     System.out.println("\nSoftware terminated!");
   }
 
-}
+}  //person3 wonde
