@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 public class MyCalculator {
   private static double  firstNumber     =    0;
   private static double  secondNumber    =    0;
-  private static double  answer          =    0;j
+  private static double  answer          =    0;
   private static String  operator        = "-1";
   private static boolean continueLoop    = true;
   private static Scanner scan            = new Scanner(System.in);
@@ -59,8 +59,33 @@ public class MyCalculator {
       "\nTerminate software by entering anything else at step 2 or step 3.");
   }  //person2 hayan
 
-  public double getFirstNumber(){
+  public double getFirstNumber(){   //methods for MyCalculator_Test
     return firstNumber;
+  }
+  public double getSecondNumber(){  //methods for MyCalculator_Test
+    return secondNumber;
+  }
+  public double getAnswer(){        //methods for MyCalculator_Test
+    return answer;
+  }
+  public String getOperator(){      //methods for MyCalculator_Test
+    return operator;
+  }
+  public double callAdd(double d1, double d2){   //methods for MyCalculator_Test
+    add(d1, d2);
+    return answer;
+  }
+  public double callSub(double d1, double d2){   //methods for MyCalculator_Test
+    sub(d1, d2);
+    return answer;
+  }
+  public double callMult(double d1, double d2){   //methods for MyCalculator_Test
+    mult(d1, d2);
+    return answer;
+  }
+  public double callDiv(double d1, double d2){   //methods for MyCalculator_Test
+    div(d1, d2);
+    return answer;
   }
 
   public static void main(String[] args) {
